@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h1>Local Library Home</h1>
+
+  <p>Welcome to <em>LocalLibrary</em></p>
+
+<h2>Content</h2>
+
+  <p>The library has the following record counts:</p>
+  <ul>
+      <li><strong>Books:</strong>{{ num_books }}</li>
+      <li><strong>Author:</strong>{{ num_author }}</li>
+      <li><strong>Copies:</strong>{{ num_instance }}</li>
+      <li><strong>Copies Available:</strong>{{ num_instance_availb }}</li>
+  </ul>
+{% endblock %}
